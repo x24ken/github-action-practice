@@ -16,6 +16,8 @@ jobs:
         run: |
           if [ -z "$INFO" ]; then
             echo "空ですよ"
+          elif [ "$INFO" = "aiueo" ]; then
+            echo "あいうえお"
           else
             echo "$INFO"
           fi
