@@ -5,6 +5,7 @@ on:
 
 jobs:
   info:
+    environment: testing
     env:
       INFO: ${{ secrets.INFO }}
     runs-on: ubuntu-latest
@@ -14,7 +15,6 @@ jobs:
       - name: Info
         run: |
           echo $INFO
-          echo ${{ secrets.INFO }}
   lint:
     runs-on: ubuntu-latest
     steps:
