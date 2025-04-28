@@ -5,7 +5,7 @@ on:
 
 jobs:
   info:
-    environment: testing
+    environment: develop
     env:
       INFO: ${{ secrets.INFO }}
     runs-on: ubuntu-latest
